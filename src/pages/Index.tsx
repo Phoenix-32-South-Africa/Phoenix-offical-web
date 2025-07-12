@@ -1,12 +1,47 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { PhoenixNav } from "@/components/PhoenixNav";
+import { PhoenixHero } from "@/components/PhoenixHero";
+import { PhoenixServices } from "@/components/PhoenixServices";
+import { PhoenixProcess } from "@/components/PhoenixProcess";
+import { PhoenixAbout } from "@/components/PhoenixAbout";
+import { PhoenixCommunity } from "@/components/PhoenixCommunity";
+import { PhoenixPartner } from "@/components/PhoenixPartner";
+import { PhoenixContact } from "@/components/PhoenixContact";
+import { PhoenixFooter } from "@/components/PhoenixFooter";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <PhoenixNav />
+      
+      <main>
+        <PhoenixHero />
+        
+        <section id="services">
+          <PhoenixServices />
+        </section>
+        
+        <section id="process">
+          <PhoenixProcess />
+        </section>
+        
+        <section id="about">
+          <PhoenixAbout />
+        </section>
+        
+        <section id="community">
+          <PhoenixCommunity />
+        </section>
+        
+        <section id="partner">
+          <PhoenixPartner />
+        </section>
+        
+        <section id="contact">
+          <PhoenixContact />
+        </section>
+      </main>
+      
+      <PhoenixFooter />
     </div>
   );
 };

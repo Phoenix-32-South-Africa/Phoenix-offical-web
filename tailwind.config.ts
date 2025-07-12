@@ -61,7 +61,28 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Phoenix 32 Brand Colors
+				phoenix: {
+					red: 'hsl(var(--phoenix-red))',
+					'red-dark': 'hsl(var(--phoenix-red-dark))',
+					'red-light': 'hsl(var(--phoenix-red-light))',
+					black: 'hsl(var(--phoenix-black))',
+					gray: 'hsl(var(--phoenix-gray))',
+					'gray-light': 'hsl(var(--phoenix-gray-light))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-red': 'var(--gradient-red)',
+				'gradient-cyber': 'var(--gradient-cyber)'
+			},
+			boxShadow: {
+				'red': 'var(--shadow-red)',
+				'cyber': 'var(--shadow-cyber)'
+			},
+			transitionTimingFunction: {
+				'cyber': 'var(--transition-cyber)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +105,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-red': {
+					'0%, 100%': {
+						opacity: '1',
+						boxShadow: '0 0 20px hsl(var(--phoenix-red) / 0.3)'
+					},
+					'50%': {
+						opacity: '0.8',
+						boxShadow: '0 0 40px hsl(var(--phoenix-red) / 0.6)'
+					}
+				},
+				'cyber-float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-red': 'pulse-red 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'cyber-float': 'cyber-float 3s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.6s ease-out'
 			}
 		}
 	},

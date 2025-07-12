@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Phoenix 32 Design System - Futuristic Black & Red Theme 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Phoenix 32 Brand */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Red for CTAs */
+    --primary: 0 84% 55%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary Dark Grays */
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 20%;
+    --input: 0 0% 12%;
+    --ring: 0 84% 55%;
 
-    --radius: 0.5rem;
+    /* Phoenix Brand Colors */
+    --phoenix-red: 0 84% 55%;
+    --phoenix-red-dark: 0 84% 45%;
+    --phoenix-red-light: 0 84% 65%;
+    --phoenix-black: 0 0% 4%;
+    --phoenix-gray: 0 0% 12%;
+    --phoenix-gray-light: 0 0% 25%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--phoenix-black)), hsl(var(--phoenix-gray)));
+    --gradient-red: linear-gradient(135deg, hsl(var(--phoenix-red-dark)), hsl(var(--phoenix-red)));
+    --gradient-cyber: linear-gradient(45deg, hsl(var(--phoenix-black)), hsl(var(--phoenix-red) / 0.1), hsl(var(--phoenix-black)));
+
+    /* Shadows */
+    --shadow-red: 0 10px 30px hsl(var(--phoenix-red) / 0.3);
+    --shadow-cyber: 0 0 40px hsl(var(--phoenix-red) / 0.2);
+
+    /* Transitions */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
 
